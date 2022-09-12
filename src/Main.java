@@ -1,0 +1,95 @@
+public class Main {
+    public static void main(String[] args) {
+        // ДЗ-8 Циклы. Урок 2
+        // Урок 1 Задание 1
+        int i = 1;
+        int salary = 170000;
+        int bank = 0;
+        for (int iN = 1; i <= 12; i++) {
+            for (; bank < 2_459_000; i++) {
+                while (true) {
+                    bank = bank + bank / 100;
+                    bank = salary + bank;
+                    System.out.println("Месяц " + i + ", сумма накоплений равна " + bank + " рублей " +
+                            "с тем количеством месяцев, необходимым для накопления данной суммы!");
+                    break;
+                }
+            }
+            // Урок 1 Задание 2
+            int iM = 1;
+            while (iM < 11) {
+                System.out.print(iM + " ");
+                iM++;
+            }
+            System.out.println();
+            for (iM = 10; iM > 0; iM--) {
+                System.out.print(iM + " ");
+            }
+            System.out.println();
+        }
+
+        // Урок 1 Задание 3
+        int population = 12000000;
+        double death = (double) 17 / 1000;
+        double birth = (double) 8 / 1000;
+        int years = 2009;
+        while (years < 2020) {
+            population = (int) (population + (population * death) - (population * birth));
+            years++;
+            System.out.println("Год " + years + ",численность населения составляет " + population);
+        }
+        // Урок 2 Задание 1,2
+        int vasya = 15000;
+        int vasyaBank = 1;
+        for (int iN = 1; iN <= 12; iN++) {
+            for (; vasyaBank < 12_000_000; iN++) {
+                vasyaBank = vasyaBank + vasyaBank / 7;
+                vasyaBank = vasya + vasyaBank;
+                if (iN % 6 == 0) { // Урок 2 Задание 2
+                    System.out.println("Месяц " + iN + ", сумма накоплений равна " + vasyaBank + " рублей!");
+                }
+            } // Урок 2 Задание 3
+            int vasyaA = 15000;
+            int total = 0;
+            for (int iW = 1; iW < 9 * 12; iW++) {
+                total = total + total / 100 * 7;
+                total = total + vasyaA;
+                if (iW % 6 == 0) {
+                    System.out.println("Месяц " + iW + ", сумма накоплений равна " + total + " рублей!");
+                }
+            }
+            // Урок 2 Задание 4
+            int friday = 2;
+            for (int iF = 1; iF < 31; iF++) {
+                if (iF % 7 == 2) {
+                    System.out.println("Сегодня пятница, " + iF + "-е число. Необходимо подготовить отчет.");
+                }
+            }
+            // Урок 3 Задание 1
+            int earthA = 1817;
+            int yearsY = 79;
+            for (int iQ = 1; iQ < 4; iQ++) {
+                while (true) {
+                    earthA = earthA + yearsY;
+                    System.out.println(earthA);
+                    break;
+                }
+            }
+            // Урок 3 Задание 2
+            int table1 = 0;
+            int table2 = 2;
+            System.out.print(table1 + " ");
+            System.out.print(table2 + " ");
+
+            int iR = 0;
+            do {
+                int tmp = table2;
+                table2 = table1 + table2;
+                table1 = tmp;
+                iR++;
+                System.out.print(table2 + " ");
+            }
+                while (iR != 8);
+            }
+        }
+    }
