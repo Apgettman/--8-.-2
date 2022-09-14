@@ -36,26 +36,26 @@ public class Main {
         // Урок 2 Задание 1,2
         int vasya = 15000;
         int vasyaBank = 1;
+        int iN = 1;
         while (vasyaBank < 12_000_000) {
             vasyaBank += vasyaBank / 7;
             vasyaBank = vasya + vasyaBank;
-            if (i % 6 == 0) {  // Урок 2 Задание 2
-                System.out.println("Месяц " + i + ", сумма накоплений равна " + vasyaBank + " рублей!");
+            if (iN % 6 == 0) {  // Урок 2 Задание 2
+                System.out.println("Месяц " + iN + ", сумма накоплений равна " + vasyaBank + " рублей!");
             }
-            i++;
+            iN++;
         } // Урок 2 Задание 3
-        int vasyaA = 15000;
+        int iW = 1;
         int total = 0;
-        while (i < 9 * 12) {
+        while (iW < 9 * 12) {
             total = total + total / 100 * 7;
-            total = total + vasyaA;
-            if (i % 6 == 0) {
-                System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей!");
+            total = total + vasya;
+            if (iW % 6 == 0) {
+                System.out.println("Месяц " + iW + ", сумма накоплений равна " + total + " рублей!");
             }
-            i++;
+            iW++;
         }
         // Урок 2 Задание 4
-        int friday = 2;
         int iF = 1;
         while (iF < 31) {
             if (iF % 7 == 2) {
