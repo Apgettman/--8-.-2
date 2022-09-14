@@ -68,10 +68,12 @@ public class Main {
         // Урок 3 Задание 1
         int earthA = 2122;
         int yearsY = 1822;
-        for (int iQ = 0; iQ <= earthA; iQ = iQ + 79) {
+        int iQ = 0;
+        while (iQ <= earthA) {
             if (iQ >= yearsY) {
                 System.out.println(iQ);
             }
+            iQ = iQ + 79;
         }
         // Урок 3 Задание 2
         int table1 = 0;
