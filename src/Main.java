@@ -18,8 +18,10 @@ public class Main {
             iM++;
         }
         System.out.println();
-        for (iM = 10; iM > 0; iM--) {
+        iM = 10;
+        while (iM > 0) {
             System.out.print(iM + " ");
+            iM--;
         }
         System.out.println();
 
